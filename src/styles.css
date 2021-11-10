@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://sahasra-components.netlify.app/cards/card.css");
+@import url("https://sahasra-components.netlify.app/default/default.css");
+@import url("https://sahasra-components.netlify.app/styles.css");
+@import url("https://sahasra-components.netlify.app/lists/list.css");
+@import url("https://sahasra-components.netlify.app/button/button.css");
+@import url("https://sahasra-components.netlify.app/grid/grid.css");
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.app-header {
+  text-align: center;
+}
+
+.app-body {
+  margin: 0rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.full-width {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 2;
+}
+
+.button--container {
+  flex: 3;
+  max-width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.justify--spacebtwn {
+  justify-content: space-between;
+}
+.hover {
+  padding: 0.7rem 1.5rem;
+  transition: all 0.4s;
+}
+.hover span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s;
+}
+.hover span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+.hover:hover span {
+  padding-right: 1rem;
+}
+.hover:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.grid-cols-auto {
+  grid-template-columns: repeat(
+    auto-fill,
+    [col-start] minmax(15rem, 1fr) [col-end]
+  );
+}
+.p-10-vertical {
+  padding: 2.5rem 0;
+}
