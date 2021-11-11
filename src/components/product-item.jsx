@@ -13,7 +13,7 @@ export const ProductItem = ({
   addCartClickHandler,
   wishClickHandler
 }) => {
-  const addIcon = "fas fa-cart";
+  // const addIcon = "fas fa-cart";
   const wishIcon = "far fa-heart fa-lg";
   const solidWishIcon = "fas fa-heart fa-lg";
   return (
@@ -46,7 +46,7 @@ export const ProductItem = ({
 
             <div className="product--desc">
               <div className="product--name">{name}</div>
-              <p className="product--info">
+              <div className="product--info">
                 {inStock && <div> In Stock </div>}
                 {!inStock && <div> Out of Stock </div>}
                 <div>{level}</div>
@@ -55,7 +55,7 @@ export const ProductItem = ({
                 ) : (
                   <div> 3 days minimum </div>
                 )}
-              </p>
+              </div>
               <div className="product--price">
                 <span className="price">₹{price}</span>
                 <span className="strike--price">

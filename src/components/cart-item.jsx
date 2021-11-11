@@ -18,9 +18,9 @@ export const CartItem = ({
 }) => {
   const plusIcon = "far fa-plus-square fa-lg";
   const minusIcon = "far fa-minus-square fa-lg";
-  const wishIcon = "far fa-heart fa-lg";
-  const solidWishIcon = "fas fa-heart fa-lg";
-  const addIcon = "fas fa-cart fa-lg";
+  // const wishIcon = "far fa-heart fa-lg";
+  // const solidWishIcon = "fas fa-heart fa-lg";
+  // const addIcon = "fas fa-cart fa-lg";
   return (
     <li key={id} className="list-item-flex">
       <div className="grid--container">
